@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div>
+<div class="row">
+    <div class="col-md-6">
+
+    <div c lass="row">
+        <div class="col-md-12">
+            <h2 style="margin-top: 3px;">2019 Buick Enclave</h2>
+         </div>
+    </div>
+
+<div class="row">
+        <div id="inventory-images" class="col-md-12">
+
+            <div id="inventory-images" class="flexslider detail-images">
+                <ul class="slides">
+                    <li class='inv-slide first' data-thumb='https://ph1.autobase.com/photos/00640/1428/14289844_001.jpg'><img src='https://ph1.autobase.com/photos/00640/1428/14289844_001.jpg' width='100%' alt='New 2019 Buick Enclave detail-1'/></li>
+                    <li class='inv-slide' data-thumb='https://ph1.autobase.com/photos/00640/1428/14289844_002.jpg' style='display:none;'><img src='https://ph1.autobase.com/photos/00640/1428/14289844_002.jpg' width='100%' alt='New 2019 Buick Enclave detail-2'/></li>
+                    <li class='inv-slide' data-thumb='https://ph1.autobase.com/photos/00640/1428/14289844_003.jpg' style='display:none;'><img src='https://ph1.autobase.com/photos/00640/1428/14289844_003.jpg' width='100%' alt='New 2019 Buick Enclave detail-3'/></li>
+                    <li class='inv-slide' data-thumb='https://ph1.autobase.com/photos/00640/1428/14289844_004.jpg' style='display:none;'><img src='https://ph1.autobase.com/photos/00640/1428/14289844_004.jpg' width='100%' alt='New 2019 Buick Enclave detail-4'/></li>
+                    <li class='inv-slide' data-thumb='https://ph1.autobase.com/photos/00640/1428/14289844_005.jpg' style='display:none;'><img src='https://ph1.autobase.com/photos/00640/1428/14289844_005.jpg' width='100%' alt='New 2019 Buick Enclave detail-5'/></li>
+                    <li class='inv-slide' data-thumb='https://ph1.autobase.com/photos/00640/1428/14289844_006.jpg' style='display:none;'><img src='https://ph1.autobase.com/photos/00640/1428/14289844_006.jpg' width='100%' alt='New 2019 Buick Enclave detail-6'/></li>
+                </ul></div>
+             </div>
+        </div>
+        <div id="uwm_5GAERCKW9KJ111448"></div>
+    </div>
+</div>
+
+<div style="border:1px solid #cccccc">
+    <div class="wide-header transparentBg">Vehicle Info</div>
+    <div class="row">
+        <div class="col-md-12" style="font-size:14px;">
+&nbsp;<div id="inv-details">
+<div class="inv-data-block">
+    <div class="inv-data">
+        <dt class="">Stock #:</dt>
+        <dd class="value">{{stock}}&nbsp;</dd>
+    </div>
+    <div class="inv-data">
+        <dt class="">VIN:</dt>
+        <dd class="value">{{vin}}&nbsp;</dd>
+    </div>
+    <div class="inv-data ">
+        <dt class="">Type:</dt>
+        <dd class="value">{{type}}&nbsp;</dd>
+    </div>
+</div>
+<div class="inv-data-block pull-left">
+
+
+    <div class="inv-data">
+                    <dt class="">Price:</dt>
+
+        <dd class="value">
+
+            ${{price}}            &nbsp;
+
+        </dd>
+    </div>
+
+
+
+
+    <div class="inv-data">
+        <dt class="">Mileage:</dt>
+        <dd class="value">{{mileage}}&nbsp;</dd>
+    </div>
+
+</div><div class="clearfix"></div><br><br>
+<div class="wide-header transparentBg">Details</div>
+<div class="inv-data-block pull-left">
+            <div class="inv-data">
+        <dt class="">Series:</dt>
+        <dd class="value">{{series}}&nbsp;</dd>
+    </div>
+                    <div class="inv-data">
+        <dt class="">Ext. Color:</dt>
+        <dd class="value">{{color}}&nbsp;</dd>
+    </div>
+
+                                        <div class="inv-data">
+        <dt class="">Transmission:</dt>
+        <dd class="value">{{transmission}}&nbsp;</dd>
+    </div>
+                <div class="inv-data">
+        <dt class="">Restraints:</dt>
+        <dd class="value">{{restraints}}&nbsp;</dd>
+    </div>
+    </div>
+</div>
+</div>    </div>
+
+
+
+            <div class="inv-wide-block clearfix">
+            <div class="wide-header transparentBg">Options</div>
+            <div class="inv-options-data">
+      <ul>
+        {% for option in options %}
+            <li>{{option}}</li>
+        {% endfor %}
+
+      </ul>
+            </div>
+        </div>
+
+
+    </div>
+<div class="row">
+    <div class="col-xs-12" style="margin-top: 15px;">
+        <p>The information on the vehicle provided on this page is supplied by the dealer or other third parties. We
+            are not responsible for any errors or omissions contained on these pages. Sales Tax, Title, License Fee,
+            Registration Fee, Documentation Fee are additional to the advertised price. While every effort has been
+            made to ensure display of accurate data, the vehicle listings within this web site may not reflect all
+            accurate vehicle items. The vehicle stock photo(s) displayed may be an example only. Pricing throughout
+            the web site does not include any options that may have been installed at the dealership. Please see the
+            dealer for more details.</p>
+    </div>
+</div>
+
+{% endblock %}

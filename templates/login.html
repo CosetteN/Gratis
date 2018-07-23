@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="wrap">
+    <div class="container main-content">
+        <!-- nosidebar -->
+
+                    <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="transparentBg halfBorderStyle padded login-div col-xs-2" style="min-width: 320px">
+        <h2 class="text-center">Log in</h2>
+        {% if loginFailed %}
+            Sorry, there was a problem with your submission.
+        {% endif %}
+
+                <form enctype="application/x-www-form-urlencoded" action="/user/login" method="post" class="zend_form"><dl class="zend_form">
+<dt id="loginusername-label"><label for="loginusername" class="required">Login:</label></dt>
+<dd id="loginusername-element">
+<input type="text" name="loginusername" id="loginusername" value="" size="35" placeholder="Username" text-align="center"></dd>
+<dt id="loginpassword-label"><label for="loginpassword" class="required">Password:</label></dt>
+<dd id="loginpassword-element">
+<input type="password" name="loginpassword" id="loginpassword" value="" size="35" maxlength="40" placeholder="Password"></dd>
+<dt id="submit-label">&nbsp;</dt><dd id="submit-element">
+<input type="submit" name="submit" id="submit" value="Submit" class="login-button btn btn-primary"></dd></dl></form>        <p class="text-center">
+            <a href="/user/register">Want to Register?</a> |
+            <a href="/user/forgotten-password">Forgot Your Password?</a>
+        </p>
+    </div>
+    <div class="col-xs-9"></div>
+</div>
+{% endblock %}

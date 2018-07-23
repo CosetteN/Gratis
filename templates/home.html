@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	{% if login %}
+   		<h1>Welcome {{username}}</h1>
+	{% endif %}
+
+<div class="inventory-listings col-md-10">
+
+<div class="row" style='margin-top: 5px;'>
+            <div class="col-md-12">
+
+<div class="vehicle-across inv-gallery-vehicle pull-left inventoryItem">
+    <div class="row" style="min-height: 120px;">
+        <div class="col-xs-8" style="padding-right: 0px;">
+            <a href="/details/111448">
+                <img class='img-responsive' style="display: inline-block;" src='https://ph1.autobase.com/photos/00640/1428/14289831_001.jpg'
+                     alt='New 2019 Buick ENCLAVE '/>
+            </a>
+        </div>
+        <div class="col-xs-4" style="padding-right: 10px; padding-left: 10px;">
+                            <div class="pc-container-across payment-calc-inpage pull-right"
+                     title="Click to calculate your monthly payment"
+                     data-dealer-id="1" data-vehicle-id="436"
+                     data-price="$37,390">
+                    <span class="payment-calc-button-text-new">Calculate Payments</span>
+                </div>
+                        <div class="clearfix"></div>
+            <div style="margin-top: 10px;">
+                <button type="button" class="btn btn-xs btn-primary"
+                        onClick="window.location.href='/vehicle/view-inventory/dealer_id/1/id/436/veh/2019+Buick+ENCLAVE'">Details
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="ellipsis">
+                2019 Buick ENCLAVE             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" style="font-weight: bold;">
+            <table><tr><tr><span style='font-size:13px;'><td>Sale Price: <td>$43,390.00</span><br><tr><span style='font-size:13px;'><td>Savings Up To: &nbsp &nbsp <td>$6,000</span><br></table>        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-6" style="font-size: smaller;">
+            <div class="ellipsis">
+                New # 111791            </div>
+            <div class='ellipsis'>&nbsp;</div>            <div class='ellipsis'>&nbsp;</div>        </div>
+        <div class="col-xs-6" style="font-size: smaller;">
+            <div class="ellipsis">
+                Mileage: 12<br>
+            </div>
+            <div class='ellipsis'></div>            <div class='ellipsis'></div>        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-xs btn-primary" onClick='compareClick(430)'>
+                Compare
+            </button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type='button' class='btn btn-xs btn-primary'
+                        onclick="window.location.href='/vehicle/view-inventory/dealer_id/1/id/430/veh/2019+Chevrolet+SILVERADO 2500HD#disclaimers'">Incentives
+                </button>
+                                            </div>
+    </div>
+</div>
+
+
+
+        </div> <!-- form-group -->
+    </form>
+    </div> <!--modal content -->
+    </div> <!-- modal-dialog -->
+</div>
+{% endblock %}
